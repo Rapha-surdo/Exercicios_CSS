@@ -1,0 +1,28 @@
+#Ahcara p {
+    background-color: rgb(55, 55, 255);
+    color: white;
+    padding: 8px;
+    margin: 5px 0;
+  border-radius: 3px;
+  font-size: 14px;
+        }
+        table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+thead {
+  background-color: #2ecc71;
+  color: white;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
