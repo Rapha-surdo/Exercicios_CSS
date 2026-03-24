@@ -23,6 +23,9 @@ th, td {
   text-align: left;
 }
 
-tbody tr:nth-child(even) {
+tbody tr {
   background-color: #f2f2f2;
+}
+  #cor_fundo{
+  background-color: rgb(221, 227, 233) ;
 }
