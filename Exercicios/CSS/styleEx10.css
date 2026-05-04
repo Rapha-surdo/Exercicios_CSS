@@ -27,7 +27,6 @@ p {
     float: left;
 }
 
-/* LINKS */
 a {
     text-decoration: none;
     color: black;
@@ -86,11 +85,9 @@ a:hover {
     max-width: 800px;
 }
 
-/* ITENS DO MENU */
 .menu ul li {
     float: left;
     width: 20%;
-    /* 5 itens na linha */
     height: 50px;
     line-height: 50px;
     background-color: #36c8f0;
@@ -98,18 +95,15 @@ a:hover {
     position: relative;
 }
 
-/* LINKS */
 .menu ul li a {
     display: block;
     color: black;
 }
 
-/* HOVER */
 .menu ul li:hover {
     background-color: #299765;
 }
 
-/* SUBMENU */
 .menu ul ul {
     display: none;
     position: absolute;
@@ -117,26 +111,22 @@ a:hover {
     left: 0;
 }
 
-/* MOSTRAR SUBMENU */
 .menu ul li:hover>ul {
     display: block;
 }
 
-/* ITENS DO SUBMENU */
 .menu ul ul li {
     width: 150px;
     float: none;
     background-color: #36c8f0;
 }
 
-/* SUBMENU LATERAL */
 .menu ul ul ul {
     position: absolute;
     top: 0;
     left: 150px;
 }
 
-/* HOVER SUBMENU */
 .menu ul ul li:hover {
     background-color: #20758d;
 }
