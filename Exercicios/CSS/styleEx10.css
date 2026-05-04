@@ -1,8 +1,10 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+/* HEADER FIXO */
 .header {
     position: fixed;
     top: 0;
@@ -10,25 +12,34 @@
     width: 100%;
 }
 
+/* CONTEÚDO */
 .main {
     margin-top: 260px;
 }
 
-.p {
+.meio {
+    margin-top: 20px;
+}
+
+/* TEXTO */
+p {
     text-align: justify;
     line-height: 1.5em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 20px;
 }
 
-.a {
+/* LINKS */
+a {
     text-decoration: none;
+    color: black;
 }
 
-.a:hover {
+a:hover {
     color: #ef5a2c;
 }
 
+/* TOPO */
 .menu_top {
     width: 100%;
     height: 170px;
@@ -53,6 +64,12 @@
     padding-top: 20px;
 }
 
+/* LIMPAR FLOAT */
+.clear {
+    clear: both;
+}
+
+/* MENU */
 .menu_down {
     background: #36c8f0;
     height: 50px;
@@ -60,31 +77,33 @@
 }
 
 .menu {
-    position: relative;
-    top: 15px;
-    border-right: solid 2px #ef5a2c;
-    padding: 10px;
+    width: 100%;
 }
 
-.clear {
-    clear: both;
-}
-
+/* LISTA PRINCIPAL */
 .menu ul {
-    text-align: center;
-    margin: auto;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 800px;
 }
 
+/* ITENS DO MENU */
 .menu ul li {
-    background-color: #36c8f0;
-    width: 20%;
-    height: 40px;
     float: left;
-    display: inline;
+    width: 20%;
+    /* 5 itens na linha */
+    height: 50px;
+    line-height: 50px;
+    background-color: #36c8f0;
     text-align: center;
-    line-height: 40px;
     position: relative;
-    text-align: center;
+}
+
+/* LINKS */
+.menu ul li a {
+    display: block;
+    color: black;
 }
 
 /* HOVER */
@@ -92,8 +111,43 @@
     background-color: #299765;
 }
 
-.menu ul {
-    padding: 0;
-    max-width: 90%;
+/* SUBMENU */
+.menu ul ul {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
 }
-.meio { margin-top: 08%;}
+
+/* MOSTRAR SUBMENU */
+.menu ul li:hover>ul {
+    display: block;
+}
+
+/* ITENS DO SUBMENU */
+.menu ul ul li {
+    width: 150px;
+    float: none;
+    background-color: #36c8f0;
+}
+
+/* SUBMENU LATERAL */
+.menu ul ul ul {
+    position: absolute;
+    top: 0;
+    left: 150px;
+}
+
+/* HOVER SUBMENU */
+.menu ul ul li:hover {
+    background-color: #20758d;
+}
+
+.menu ul ul ul li:hover {
+    background-color: #165263;
+}
+
+p {
+    text-align: justify;
+    float: left;
+}
